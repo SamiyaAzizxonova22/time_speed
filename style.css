@@ -3,50 +3,82 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: white;
   background-image: url(./black_walpaper.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 
-hr {
+.header{
+  display: flex;
+    align-items: center;
+}
+
+.hr {
+  /* border: #fff; */
+  /* background-color: white; */
+  /* color: white; */
   width: 100%;
 }
 
+
+#select {
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  margin-left: 100px;
+}
+#select option {
+  background-color: #000;
+  /* padding-top: 50px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1 {
-  margin-top: 300px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
   font-size: 30px;
   letter-spacing: 2px;
-  /* user-select: none; */
+  user-select: none;
 }
 
 input {
   width: 300px;
   outline: none;
   border-radius: 20px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
   padding: 10px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
-.wrong {
-  -webkit-box-shadow: 0px 0px 15px 6px rgba(255, 0, 45, 0.2);
-  -moz-box-shadow: 0px 0px 15px 6px rgba(255, 0, 45, 0.2);
-  box-shadow: 0px 0px 15px 6px rgba(255, 0, 45, 0.2);
-  border: 2px solid red;
-}
-
-
-#score{
+#score {
   margin-bottom: 10px;
 }
 
-#time{
+#time {
   font-weight: bolder;
+}
+
+@media screen and (max-width: 800px) {
+  h1{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1{
+    font-size: 20px;
+  }
 }

@@ -23,5 +23,8 @@ input.addEventListener('input', ()=> {
     score++
     scoreEl.innerHTML = `Score : ${score}`
     input.value = ''
+
+
   }
+
 })
